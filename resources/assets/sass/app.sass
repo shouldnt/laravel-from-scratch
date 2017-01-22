@@ -1,0 +1,40 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600)
+
+// Variables
+@import "variables"
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap"
+
+
+body 
+	width: 500
+	margin: 50px auto
+textarea
+button
+	color: white
+	border: none
+	background: $text-color
+	&:hover
+		background: darken($text-color, 10%)
+p,form
+	margin: 0
+.grid
+	width: 100%
+	display: flex 
+	align-items: center
+	padding: 10px 0
+	border-bottom: 1px solid $text-color
+	&:last-child
+		border-bottom: none
+	&.column
+		flex-direction: column
+	.cell
+		flex: 3
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+		&.is-1
+			flex: 1
